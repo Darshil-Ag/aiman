@@ -22,10 +22,10 @@ export default function Services() {
       icon: Heart,
       title: "Adult Therapy",
       description: "Professional counseling and therapy services for adults facing mental health challenges",
-      color: "from-blue-500 to-blue-600",
-      bgColor: "bg-blue-50 dark:bg-blue-950/20",
-      borderColor: "border-blue-200 dark:border-blue-800",
-      textColor: "text-blue-600 dark:text-blue-400",
+      color: "from-violet-500 to-violet-600",
+      bgColor: "bg-violet-50 dark:bg-violet-950/20",
+      borderColor: "border-violet-200 dark:border-violet-800",
+      textColor: "text-violet-600 dark:text-violet-400",
       features: [
         "Individual therapy sessions",
         "Cognitive Behavioral Therapy (CBT)",
@@ -63,10 +63,10 @@ export default function Services() {
       icon: Brain,
       title: "Adult Psychiatry",
       description: "Comprehensive psychiatric evaluation and medication management for mental health conditions",
-      color: "from-green-500 to-green-600",
-      bgColor: "bg-green-50 dark:bg-green-950/20",
-      borderColor: "border-green-200 dark:border-green-800",
-      textColor: "text-green-600 dark:text-green-400",
+      color: "from-purple-500 to-purple-600",
+      bgColor: "bg-purple-50 dark:bg-purple-950/20",
+      borderColor: "border-purple-200 dark:border-purple-800",
+      textColor: "text-purple-600 dark:text-purple-400",
       features: [
         "Psychiatric evaluations",
         "Medication management",
@@ -104,10 +104,10 @@ export default function Services() {
       icon: Building2,
       title: "Mental Health Hospital",
       description: "Inpatient and intensive outpatient programs for comprehensive mental health treatment",
-      color: "from-purple-500 to-purple-600",
-      bgColor: "bg-purple-50 dark:bg-purple-950/20",
-      borderColor: "border-purple-200 dark:border-purple-800",
-      textColor: "text-purple-600 dark:text-purple-400",
+      color: "from-indigo-500 to-indigo-600",
+      bgColor: "bg-indigo-50 dark:bg-indigo-950/20",
+      borderColor: "border-indigo-200 dark:border-indigo-800",
+      textColor: "text-indigo-600 dark:text-indigo-400",
       features: [
         "Inpatient treatment programs",
         "Intensive outpatient programs",
@@ -153,26 +153,25 @@ export default function Services() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="py-24 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/90 via-purple-600/90 to-pink-600/90"></div>
+      <section className="py-24 bg-gradient-to-br from-violet-50 via-purple-50 to-indigo-50 dark:from-violet-950/20 dark:via-purple-950/20 dark:to-indigo-950/20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjOGI1Y2Y5IiBmaWxsLW9wYWNpdHk9IjAuMSI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMiIvPjwvZz48L3N2Zz4=')] opacity-40"></div>
         <div className="container px-4 relative z-10">
-          <div className="mx-auto max-w-4xl text-center text-white">
-            <Badge variant="secondary" className="mb-6 text-sm font-medium bg-white/20 text-white border-white/30">
+          <div className="mx-auto max-w-4xl text-center">
+            <Badge variant="secondary" className="mb-6 text-sm font-medium bg-violet-100 text-violet-800 dark:bg-violet-900 dark:text-violet-200 border-violet-200 dark:border-violet-800">
               Our Services
             </Badge>
-            <h1 className="mb-8 text-5xl font-bold tracking-tight sm:text-7xl">
+            <h1 className="mb-8 text-5xl font-bold tracking-tight sm:text-7xl text-violet-900 dark:text-violet-100">
               Comprehensive Mental Health Services
             </h1>
-            <p className="text-xl sm:text-2xl leading-relaxed text-white/90 max-w-3xl mx-auto">
+            <p className="text-xl sm:text-2xl leading-relaxed text-violet-700 dark:text-violet-300 max-w-3xl mx-auto">
               We provide a full spectrum of mental health services designed to support you at every stage of your journey to wellness.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+              <Button size="lg" className="bg-violet-600 hover:bg-violet-700 text-white">
                 <MessageCircle className="mr-2 w-5 h-5" />
                 Get Started Today
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
+              <Button size="lg" variant="outline" className="border-violet-600 text-violet-600 hover:bg-violet-600 hover:text-white">
                 <Phone className="mr-2 w-5 h-5" />
                 Call Us Now
               </Button>

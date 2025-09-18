@@ -287,22 +287,22 @@ export default function Conditions() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 dark:from-emerald-950/20 dark:via-teal-950/20 dark:to-cyan-950/20 relative">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMwNTk2NjkiIGZpbGwtb3BhY2l0eT0iMC4xIj48Y2lyY2xlIGN4PSIzMCIgY3k9IjMwIiByPSIyIi8+PC9nPjwvZz48L3N2Zz4=')] opacity-30"></div>
+      <section className="py-20 bg-gradient-to-br from-lavender-50 via-violet-50 to-purple-50 dark:from-lavender-950/20 dark:via-violet-950/20 dark:to-purple-950/20 relative">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjYTc1OWY5IiBmaWxsLW9wYWNpdHk9IjAuMSI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L3N2Zz4=')] opacity-30"></div>
         <div className="container px-4 relative">
           <div className="mx-auto max-w-4xl text-center">
-            <Badge variant="secondary" className="mb-6 text-sm font-medium bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200">
+            <Badge variant="secondary" className="mb-6 text-sm font-medium bg-lavender-100 text-lavender-800 dark:bg-lavender-900 dark:text-lavender-200">
               Conditions We Support
             </Badge>
-            <h1 className="mb-8 text-4xl font-bold tracking-tight sm:text-6xl text-emerald-900 dark:text-emerald-100">
+            <h1 className="mb-8 text-4xl font-bold tracking-tight sm:text-6xl text-lavender-900 dark:text-lavender-100">
               Mental Health Conditions We Support
             </h1>
-            <p className="text-xl text-emerald-700 dark:text-emerald-300 sm:text-2xl leading-relaxed max-w-3xl mx-auto">
+            <p className="text-xl text-lavender-700 dark:text-lavender-300 sm:text-2xl leading-relaxed max-w-3xl mx-auto">
               We provide compassionate, evidence-based care for a wide range of mental health conditions. 
               You're not alone in your journey, and recovery is possible.
             </p>
             <div className="mt-8 flex justify-center">
-              <div className="flex items-center gap-2 text-emerald-600 dark:text-emerald-400">
+              <div className="flex items-center gap-2 text-lavender-600 dark:text-lavender-400 bg-lavender-100 dark:bg-lavender-900/50 px-6 py-3 rounded-full">
                 <Heart className="w-5 h-5" />
                 <span className="font-medium">Compassionate Care for Every Condition</span>
               </div>

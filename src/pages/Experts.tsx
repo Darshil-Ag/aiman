@@ -143,32 +143,32 @@ export default function Experts() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI2ZmZmZmZiIgZmlsbC1vcGFjaXR5PSIwLjA1Ij48cGF0aCBkPSJNNTAgMEwxMDAgNTBMNTAgMTAwTDAgNTB6Ii8+PC9nPjwvc3ZnPg==')] opacity-20"></div>
+      <section className="py-20 bg-gradient-to-br from-violet-100 via-purple-100 to-indigo-100 dark:from-violet-950/30 dark:via-purple-950/30 dark:to-indigo-950/30 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI2E3NTlmOSIgZmlsbC1vcGFjaXR5PSIwLjA1Ij48cGF0aCBkPSJNNTAgMEwxMDAgNTBMNTAgMTAwTDAgNTB6Ii8+PC9nPjwvc3ZnPg==')] opacity-20"></div>
         <div className="container px-4 relative z-10">
-          <div className="mx-auto max-w-4xl text-center text-white">
-            <Badge variant="secondary" className="mb-6 text-sm font-medium bg-white/20 text-white border-white/30">
+          <div className="mx-auto max-w-4xl text-center">
+            <Badge variant="secondary" className="mb-6 text-sm font-medium bg-violet-200 text-violet-800 dark:bg-violet-800 dark:text-violet-200 border-violet-300 dark:border-violet-700">
               Our Expert Team
             </Badge>
-            <h1 className="mb-8 text-4xl font-bold tracking-tight sm:text-6xl">
+            <h1 className="mb-8 text-4xl font-bold tracking-tight sm:text-6xl text-violet-900 dark:text-violet-100">
               Meet Our Compassionate Experts
             </h1>
-            <p className="text-xl text-white/90 sm:text-2xl leading-relaxed max-w-3xl mx-auto">
+            <p className="text-xl text-violet-700 dark:text-violet-300 sm:text-2xl leading-relaxed max-w-3xl mx-auto">
               Our team of highly qualified mental health professionals is dedicated to providing 
               compassionate, evidence-based care tailored to your unique needs and circumstances.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
-                <Award className="w-4 h-4" />
-                <span className="text-sm font-medium">Licensed Professionals</span>
+              <div className="flex items-center gap-2 bg-violet-200 dark:bg-violet-800/50 px-4 py-2 rounded-full">
+                <Award className="w-4 h-4 text-violet-600 dark:text-violet-400" />
+                <span className="text-sm font-medium text-violet-800 dark:text-violet-200">Licensed Professionals</span>
               </div>
-              <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
-                <Heart className="w-4 h-4" />
-                <span className="text-sm font-medium">Compassionate Care</span>
+              <div className="flex items-center gap-2 bg-violet-200 dark:bg-violet-800/50 px-4 py-2 rounded-full">
+                <Heart className="w-4 h-4 text-violet-600 dark:text-violet-400" />
+                <span className="text-sm font-medium text-violet-800 dark:text-violet-200">Compassionate Care</span>
               </div>
-              <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
-                <Shield className="w-4 h-4" />
-                <span className="text-sm font-medium">Confidential & Safe</span>
+              <div className="flex items-center gap-2 bg-violet-200 dark:bg-violet-800/50 px-4 py-2 rounded-full">
+                <Shield className="w-4 h-4 text-violet-600 dark:text-violet-400" />
+                <span className="text-sm font-medium text-violet-800 dark:text-violet-200">Confidential & Safe</span>
               </div>
             </div>
           </div>
