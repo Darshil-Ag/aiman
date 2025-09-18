@@ -6,6 +6,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import Index from "./pages/Index";
 import About from "./pages/About";
+import Services from "./pages/Services";
+import Conditions from "./pages/Conditions";
+import Experts from "./pages/Experts";
 import NotFound from "./pages/NotFound";
 import DoctorSignup from "./pages/DoctorSignup";
 import PatientSignup from "./pages/PatientSignup";
@@ -31,6 +34,9 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<Layout><About /></Layout>} />
+          <Route path="/services" element={<Layout><Services /></Layout>} />
+          <Route path="/conditions" element={<Layout><Conditions /></Layout>} />
+          <Route path="/experts" element={<Layout><Experts /></Layout>} />
           <Route path="/doctor-signup" element={<DoctorSignup />} />
           <Route path="/patient-signup" element={<PatientSignup />} />
           <Route path="/patient-flow" element={<PatientFlow />} />

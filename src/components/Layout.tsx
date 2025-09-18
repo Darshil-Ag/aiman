@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Heart, Calendar, Stethoscope, Users, Home, Info, Phone } from "lucide-react";
+import { Menu, Heart, Calendar, Stethoscope, Users, Home, Info, Phone, Brain, UserCheck, BookOpen } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 interface LayoutProps {
@@ -11,9 +11,10 @@ interface LayoutProps {
 const navigation = [
   { name: "Home", href: "/", icon: Home },
   { name: "About", href: "/about", icon: Info },
-  { name: "How to Book", href: "/patient-flow", icon: Calendar },
-  { name: "Book Appointment", href: "/book", icon: Stethoscope },
-  { name: "Contact", href: "/contact", icon: Phone },
+  { name: "Services", href: "/services", icon: Brain },
+  { name: "Experts", href: "/experts", icon: UserCheck },
+  { name: "How to Book", href: "/patient-flow", icon: BookOpen },
+  { name: "Book Appointment", href: "/book", icon: Calendar },
 ];
 
 export function Layout({ children }: LayoutProps) {
@@ -203,10 +204,10 @@ export function Layout({ children }: LayoutProps) {
             <div>
               <h4 className="font-semibold mb-4">Services</h4>
               <div className="space-y-2 text-sm text-muted-foreground">
-                <p>Stress Management</p>
-                <p>Child Therapy</p>
-                <p>Depression Treatment</p>
-                <p>Couples Counseling</p>
+                <Link to="/services" className="block hover:text-primary transition-colors">Adult Therapy</Link>
+                <Link to="/services" className="block hover:text-primary transition-colors">Adult Psychiatry</Link>
+                <Link to="/services" className="block hover:text-primary transition-colors">Mental Health Hospital</Link>
+                <Link to="/conditions" className="block hover:text-primary transition-colors">Conditions We Support</Link>
               </div>
             </div>
 
