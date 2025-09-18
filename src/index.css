@@ -111,3 +111,142 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+/* Custom Animations for Peaceful Lavender Theme */
+@layer utilities {
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  .animate-fade-in-left {
+    animation: fadeInLeft 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  .animate-fade-in-right {
+    animation: fadeInRight 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  .animation-delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 0.4s;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 0.6s;
+  }
+
+  .animation-delay-800 {
+    animation-delay: 0.8s;
+  }
+
+  .animation-delay-1000 {
+    animation-delay: 1s;
+  }
+
+  .animation-delay-1200 {
+    animation-delay: 1.2s;
+  }
+
+  .animation-delay-1400 {
+    animation-delay: 1.4s;
+  }
+
+  .animation-delay-1600 {
+    animation-delay: 1.6s;
+  }
+
+  .animation-delay-1800 {
+    animation-delay: 1.8s;
+  }
+
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInLeft {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeInRight {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Lavender color utilities */
+  .text-lavender-50 { color: #faf7ff; }
+  .text-lavender-100 { color: #f3e8ff; }
+  .text-lavender-200 { color: #e9d5ff; }
+  .text-lavender-300 { color: #d8b4fe; }
+  .text-lavender-400 { color: #c084fc; }
+  .text-lavender-500 { color: #a855f7; }
+  .text-lavender-600 { color: #9333ea; }
+  .text-lavender-700 { color: #7c3aed; }
+  .text-lavender-800 { color: #6b21a8; }
+  .text-lavender-900 { color: #581c87; }
+  .text-lavender-950 { color: #3b0764; }
+
+  .bg-lavender-50 { background-color: #faf7ff; }
+  .bg-lavender-100 { background-color: #f3e8ff; }
+  .bg-lavender-200 { background-color: #e9d5ff; }
+  .bg-lavender-300 { background-color: #d8b4fe; }
+  .bg-lavender-400 { background-color: #c084fc; }
+  .bg-lavender-500 { background-color: #a855f7; }
+  .bg-lavender-600 { background-color: #9333ea; }
+  .bg-lavender-700 { background-color: #7c3aed; }
+  .bg-lavender-800 { background-color: #6b21a8; }
+  .bg-lavender-900 { background-color: #581c87; }
+  .bg-lavender-950 { background-color: #3b0764; }
+
+  .border-lavender-200 { border-color: #e9d5ff; }
+  .border-lavender-300 { border-color: #d8b4fe; }
+  .border-lavender-400 { border-color: #c084fc; }
+  .border-lavender-500 { border-color: #a855f7; }
+  .border-lavender-600 { border-color: #9333ea; }
+  .border-lavender-700 { border-color: #7c3aed; }
+  .border-lavender-800 { border-color: #6b21a8; }
+
+  .from-lavender-50 { --tw-gradient-from: #faf7ff; }
+  .from-lavender-100 { --tw-gradient-from: #f3e8ff; }
+  .from-lavender-200 { --tw-gradient-from: #e9d5ff; }
+  .from-lavender-300 { --tw-gradient-from: #d8b4fe; }
+  .from-lavender-400 { --tw-gradient-from: #c084fc; }
+  .from-lavender-500 { --tw-gradient-from: #a855f7; }
+  .from-lavender-600 { --tw-gradient-from: #9333ea; }
+  .from-lavender-700 { --tw-gradient-from: #7c3aed; }
+  .from-lavender-800 { --tw-gradient-from: #6b21a8; }
+  .from-lavender-900 { --tw-gradient-from: #581c87; }
+  .from-lavender-950 { --tw-gradient-from: #3b0764; }
+
+  .to-lavender-50 { --tw-gradient-to: #faf7ff; }
+  .to-lavender-100 { --tw-gradient-to: #f3e8ff; }
+  .to-lavender-200 { --tw-gradient-to: #e9d5ff; }
+  .to-lavender-300 { --tw-gradient-to: #d8b4fe; }
+  .to-lavender-400 { --tw-gradient-to: #c084fc; }
+  .to-lavender-500 { --tw-gradient-to: #a855f7; }
+  .to-lavender-600 { --tw-gradient-to: #9333ea; }
+  .to-lavender-700 { --tw-gradient-to: #7c3aed; }
+  .to-lavender-800 { --tw-gradient-to: #6b21a8; }
+  .to-lavender-900 { --tw-gradient-to: #581c87; }
+  .to-lavender-950 { --tw-gradient-to: #3b0764; }
+}

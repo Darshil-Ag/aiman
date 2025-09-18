@@ -107,31 +107,35 @@ export default function About() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 dark:from-amber-950/20 dark:via-orange-950/20 dark:to-red-950/20 relative">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjZjU5ZTBiIiBmaWxsLW9wYWNpdHk9IjAuMSI+PHBhdGggZD0iTTQwIDBMODAgNDBMNDAgODBMMCA0MHoiLz48L2c+PC9zdmc+')] opacity-40"></div>
+      <section className="py-20 bg-gradient-to-br from-primary/5 via-accent/5 to-secondary relative">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjYTc1OWY5IiBmaWxsLW9wYWNpdHk9IjAuMSI+PHBhdGggZD0iTTQwIDBMODAgNDBMNDAgODBMMCA0MHoiLz48L2c+PC9zdmc+')] opacity-40 animate-pulse"></div>
         <div className="container px-4 relative">
           <div className="mx-auto max-w-4xl text-center">
-            <Badge variant="secondary" className="mb-6 text-sm font-medium bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200">
+            <div className="animate-fade-in-up">
+              <Badge variant="secondary" className="mb-6 text-sm font-medium animate-bounce">
               About AIMAN
             </Badge>
-            <h1 className="mb-8 text-4xl font-bold tracking-tight sm:text-6xl text-amber-900 dark:text-amber-100">
-              About AIMAN
+            </div>
+            <div className="animate-fade-in-up animation-delay-200">
+              <h1 className="mb-8 text-4xl font-bold tracking-tight sm:text-6xl">
+                About AIMAN
             </h1>
-            <div className="space-y-6 text-amber-800 dark:text-amber-200">
+            </div>
+            <div className="space-y-6 text-muted-foreground animate-fade-in-up animation-delay-400">
               <p className="text-xl sm:text-2xl leading-relaxed font-medium">
                 AIMAN, formerly named InnerHour, is a mental health organisation founded in the year 2016 by renowned psychiatrist and healthcare entrepreneur,{" "}
-                <span className="text-amber-600 dark:text-amber-400 font-semibold">Dr. Amit Malik</span>.
+                <span className="text-primary font-semibold">Dr. Amit Malik</span>.
               </p>
               <p className="text-lg leading-relaxed">
                 The organisation aims to create a mental health ecosystem that provides treatment and care plans for a range of mental health conditions like{" "}
-                <span className="text-amber-600 dark:text-amber-400 font-medium">anxiety, depression, bipolar disorder, ADHD, OCD, and schizophrenia</span>, and addictions.
+                <span className="text-primary font-medium">anxiety, depression, bipolar disorder, ADHD, OCD, and schizophrenia</span>, and addictions.
               </p>
               <p className="text-lg leading-relaxed">
-                In 2019, <span className="text-amber-600 dark:text-amber-400 font-semibold">Ms. Neha Kirpal</span>, a social entrepreneur and global mental health ambassador, joined AIMAN as Co-founder.
+                In 2019, <span className="text-primary font-semibold">Ms. Neha Kirpal</span>, a social entrepreneur and global mental health ambassador, joined AIMAN as Co-founder.
               </p>
             </div>
-            <div className="mt-8 flex justify-center">
-              <div className="flex items-center gap-2 text-amber-600 dark:text-amber-400 bg-amber-100 dark:bg-amber-900/50 px-6 py-3 rounded-full">
+            <div className="mt-8 flex justify-center animate-fade-in-up animation-delay-600">
+              <div className="flex items-center gap-2 text-primary bg-primary/10 px-6 py-3 rounded-full transform hover:scale-105 transition-all duration-300">
                 <Heart className="w-5 h-5" />
                 <span className="font-medium">Transforming Mental Healthcare in India</span>
               </div>
@@ -166,6 +170,7 @@ export default function About() {
           </div>
         </div>
       </section>
+
 
       {/* The AIMAN Solution */}
       <section className="py-20 bg-muted/30 relative">
@@ -205,12 +210,12 @@ export default function About() {
         <div className="container px-4">
           <div className="mx-auto max-w-4xl">
             <div className="text-center mb-12">
-              <Badge variant="secondary" className="mb-4">
+            <Badge variant="secondary" className="mb-4">
                 The AIMAN Approach
-              </Badge>
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">
+            </Badge>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">
                 Our mission is simple - to help you feel better, get better and stay better.
-              </h2>
+            </h2>
             </div>
 
             <div className="space-y-12">
@@ -247,35 +252,94 @@ export default function About() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-20 bg-muted/30">
+      {/* Professional Impact Stats Widget */}
+      <section className="py-20 bg-gradient-to-r from-lavender-50 to-violet-50 dark:from-lavender-950/10 dark:to-violet-950/10">
         <div className="container px-4">
-          <div className="mx-auto max-w-4xl">
+          <div className="mx-auto max-w-6xl">
             <div className="text-center mb-12">
-            <Badge variant="secondary" className="mb-4">
+              <Badge variant="secondary" className="mb-6 text-sm font-medium bg-lavender-100 text-lavender-800 dark:bg-lavender-900 dark:text-lavender-200">
                 We've made your mental health our priority
-            </Badge>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">
+              </Badge>
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4 text-lavender-900 dark:text-lavender-100">
                 At AIMAN, we have 200+ experts from different backgrounds
-            </h2>
-            <p className="text-lg text-muted-foreground">
+              </h2>
+              <p className="text-lg text-lavender-700 dark:text-lavender-300">
                 therapy, psychiatry, technology, and business - who are all committed to your care.
             </p>
           </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {stats.map((stat, index) => (
-                <Card key={index} className="text-center hover:shadow-lg transition-all duration-300 hover:scale-105 border-0 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm">
+                <Card key={index} className="text-center hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm">
                   <CardContent className="p-6">
-                    <div className="text-4xl font-bold text-primary mb-3 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+                    <div className="text-4xl font-bold text-lavender-600 dark:text-lavender-400 mb-3">
                       {stat.number}
                     </div>
-                    <div className="text-sm text-muted-foreground leading-relaxed font-medium">
+                    <div className="text-sm text-lavender-700 dark:text-lavender-300 leading-relaxed font-medium">
                       {stat.label}
                     </div>
                   </CardContent>
                 </Card>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Professional Values Widget */}
+      <section className="py-16 bg-white dark:bg-gray-900">
+        <div className="container px-4">
+          <div className="mx-auto max-w-6xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-lavender-900 dark:text-lavender-100 mb-4">
+                Our Professional Values
+              </h2>
+              <p className="text-lavender-700 dark:text-lavender-300 max-w-3xl mx-auto">
+                These core values guide every interaction and decision we make in providing mental healthcare.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <Card className="text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardHeader>
+                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-lavender-100 dark:bg-lavender-900/50">
+                    <Heart className="h-8 w-8 text-lavender-600 dark:text-lavender-400" />
+                  </div>
+                  <CardTitle className="text-xl text-lavender-900 dark:text-lavender-100">Compassion</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-lavender-700 dark:text-lavender-300">
+                    We approach every patient with empathy, understanding, and genuine care for their well-being.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardHeader>
+                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-violet-100 dark:bg-violet-900/50">
+                    <Shield className="h-8 w-8 text-violet-600 dark:text-violet-400" />
+                  </div>
+                  <CardTitle className="text-xl text-violet-900 dark:text-violet-100">Excellence</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-violet-700 dark:text-violet-300">
+                    We maintain the highest standards of clinical practice and continuously improve our services.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardHeader>
+                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-purple-100 dark:bg-purple-900/50">
+                    <Users className="h-8 w-8 text-purple-600 dark:text-purple-400" />
+                  </div>
+                  <CardTitle className="text-xl text-purple-900 dark:text-purple-100">Integrity</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-purple-700 dark:text-purple-300">
+                    We uphold the highest ethical standards and maintain complete confidentiality in all our interactions.
+                  </p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>

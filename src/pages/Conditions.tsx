@@ -287,22 +287,28 @@ export default function Conditions() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-lavender-50 via-violet-50 to-purple-50 dark:from-lavender-950/20 dark:via-violet-950/20 dark:to-purple-950/20 relative">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjYTc1OWY5IiBmaWxsLW9wYWNpdHk9IjAuMSI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L3N2Zz4=')] opacity-30"></div>
+      <section className="py-20 bg-gradient-to-br from-primary/5 via-accent/5 to-secondary relative">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjYTc1OWY5IiBmaWxsLW9wYWNpdHk9IjAuMSI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L3N2Zz4=')] opacity-30 animate-pulse"></div>
         <div className="container px-4 relative">
           <div className="mx-auto max-w-4xl text-center">
-            <Badge variant="secondary" className="mb-6 text-sm font-medium bg-lavender-100 text-lavender-800 dark:bg-lavender-900 dark:text-lavender-200">
-              Conditions We Support
-            </Badge>
-            <h1 className="mb-8 text-4xl font-bold tracking-tight sm:text-6xl text-lavender-900 dark:text-lavender-100">
-              Mental Health Conditions We Support
-            </h1>
-            <p className="text-xl text-lavender-700 dark:text-lavender-300 sm:text-2xl leading-relaxed max-w-3xl mx-auto">
-              We provide compassionate, evidence-based care for a wide range of mental health conditions. 
-              You're not alone in your journey, and recovery is possible.
-            </p>
-            <div className="mt-8 flex justify-center">
-              <div className="flex items-center gap-2 text-lavender-600 dark:text-lavender-400 bg-lavender-100 dark:bg-lavender-900/50 px-6 py-3 rounded-full">
+            <div className="animate-fade-in-up">
+              <Badge variant="secondary" className="mb-6 text-sm font-medium animate-bounce">
+                Conditions We Support
+              </Badge>
+            </div>
+            <div className="animate-fade-in-up animation-delay-200">
+              <h1 className="mb-8 text-4xl font-bold tracking-tight sm:text-6xl">
+                Mental Health Conditions We Support
+              </h1>
+            </div>
+            <div className="animate-fade-in-up animation-delay-400">
+              <p className="text-xl text-muted-foreground sm:text-2xl leading-relaxed max-w-3xl mx-auto">
+                We provide compassionate, evidence-based care for a wide range of mental health conditions. 
+                You're not alone in your journey, and recovery is possible.
+              </p>
+            </div>
+            <div className="mt-8 flex justify-center animate-fade-in-up animation-delay-600">
+              <div className="flex items-center gap-2 text-primary bg-primary/10 px-6 py-3 rounded-full transform hover:scale-105 transition-all duration-300">
                 <Heart className="w-5 h-5" />
                 <span className="font-medium">Compassionate Care for Every Condition</span>
               </div>
@@ -310,6 +316,61 @@ export default function Conditions() {
           </div>
         </div>
       </section>
+
+      {/* Professional Treatment Approach Widget */}
+      <section className="py-16 bg-gradient-to-r from-lavender-50 to-violet-50 dark:from-lavender-950/10 dark:to-violet-950/10">
+        <div className="container px-4">
+          <div className="mx-auto max-w-6xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-lavender-900 dark:text-lavender-100 mb-4">
+                Our Professional Treatment Approach
+              </h2>
+              <p className="text-lavender-700 dark:text-lavender-300 max-w-3xl mx-auto">
+                We use evidence-based treatments and personalized care plans to help you overcome mental health challenges and achieve lasting recovery.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+              <Card className="text-center border-0 shadow-lg bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm">
+                <CardContent className="p-6">
+                  <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-lavender-100 dark:bg-lavender-900/50">
+                    <Brain className="h-6 w-6 text-lavender-600 dark:text-lavender-400" />
+                  </div>
+                  <h3 className="font-semibold text-lavender-900 dark:text-lavender-100 mb-2">Assessment</h3>
+                  <p className="text-sm text-lavender-700 dark:text-lavender-300">Comprehensive evaluation and diagnosis</p>
+                </CardContent>
+              </Card>
+              <Card className="text-center border-0 shadow-lg bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm">
+                <CardContent className="p-6">
+                  <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-violet-100 dark:bg-violet-900/50">
+                    <Heart className="h-6 w-6 text-violet-600 dark:text-violet-400" />
+                  </div>
+                  <h3 className="font-semibold text-violet-900 dark:text-violet-100 mb-2">Treatment</h3>
+                  <p className="text-sm text-violet-700 dark:text-violet-300">Personalized therapy and care plans</p>
+                </CardContent>
+              </Card>
+              <Card className="text-center border-0 shadow-lg bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm">
+                <CardContent className="p-6">
+                  <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-purple-100 dark:bg-purple-900/50">
+                    <Users className="h-6 w-6 text-purple-600 dark:text-purple-400" />
+                  </div>
+                  <h3 className="font-semibold text-purple-900 dark:text-purple-100 mb-2">Support</h3>
+                  <p className="text-sm text-purple-700 dark:text-purple-300">Ongoing support and monitoring</p>
+                </CardContent>
+              </Card>
+              <Card className="text-center border-0 shadow-lg bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm">
+                <CardContent className="p-6">
+                  <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-indigo-100 dark:bg-indigo-900/50">
+                    <Shield className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
+                  </div>
+                  <h3 className="font-semibold text-indigo-900 dark:text-indigo-100 mb-2">Recovery</h3>
+                  <p className="text-sm text-indigo-700 dark:text-indigo-300">Long-term wellness and prevention</p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* Conditions Grid */}
       <section className="py-20">
@@ -319,7 +380,7 @@ export default function Conditions() {
               {conditions.map((condition, index) => {
                 const Icon = condition.icon;
                 return (
-                  <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <Card key={index} className={`border-0 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-fade-in-up animation-delay-${index * 100}`}>
                     <CardHeader className={`${condition.bgColor} ${condition.borderColor} border-b`}>
                       <div className="flex items-center gap-4">
                         <div className={`flex items-center justify-center w-12 h-12 rounded-full ${condition.bgColor} ${condition.borderColor} border-2`}>

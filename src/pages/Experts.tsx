@@ -143,32 +143,38 @@ export default function Experts() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-violet-100 via-purple-100 to-indigo-100 dark:from-violet-950/30 dark:via-purple-950/30 dark:to-indigo-950/30 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI2E3NTlmOSIgZmlsbC1vcGFjaXR5PSIwLjA1Ij48cGF0aCBkPSJNNTAgMEwxMDAgNTBMNTAgMTAwTDAgNTB6Ii8+PC9nPjwvc3ZnPg==')] opacity-20"></div>
+      <section className="py-20 bg-gradient-to-br from-primary/5 via-accent/5 to-secondary relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI2E3NTlmOSIgZmlsbC1vcGFjaXR5PSIwLjA1Ij48cGF0aCBkPSJNNTAgMEwxMDAgNTBMNTAgMTAwTDAgNTB6Ii8+PC9nPjwvc3ZnPg==')] opacity-20 animate-pulse"></div>
         <div className="container px-4 relative z-10">
           <div className="mx-auto max-w-4xl text-center">
-            <Badge variant="secondary" className="mb-6 text-sm font-medium bg-violet-200 text-violet-800 dark:bg-violet-800 dark:text-violet-200 border-violet-300 dark:border-violet-700">
-              Our Expert Team
-            </Badge>
-            <h1 className="mb-8 text-4xl font-bold tracking-tight sm:text-6xl text-violet-900 dark:text-violet-100">
-              Meet Our Compassionate Experts
-            </h1>
-            <p className="text-xl text-violet-700 dark:text-violet-300 sm:text-2xl leading-relaxed max-w-3xl mx-auto">
-              Our team of highly qualified mental health professionals is dedicated to providing 
-              compassionate, evidence-based care tailored to your unique needs and circumstances.
-            </p>
-            <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <div className="flex items-center gap-2 bg-violet-200 dark:bg-violet-800/50 px-4 py-2 rounded-full">
-                <Award className="w-4 h-4 text-violet-600 dark:text-violet-400" />
-                <span className="text-sm font-medium text-violet-800 dark:text-violet-200">Licensed Professionals</span>
+            <div className="animate-fade-in-up">
+              <Badge variant="secondary" className="mb-6 text-sm font-medium animate-bounce">
+                Our Expert Team
+              </Badge>
+            </div>
+            <div className="animate-fade-in-up animation-delay-200">
+              <h1 className="mb-8 text-4xl font-bold tracking-tight sm:text-6xl">
+                Meet Our Compassionate Experts
+              </h1>
+            </div>
+            <div className="animate-fade-in-up animation-delay-400">
+              <p className="text-xl text-muted-foreground sm:text-2xl leading-relaxed max-w-3xl mx-auto">
+                Our team of highly qualified mental health professionals is dedicated to providing 
+                compassionate, evidence-based care tailored to your unique needs and circumstances.
+              </p>
+            </div>
+            <div className="mt-8 flex flex-wrap justify-center gap-4 animate-fade-in-up animation-delay-600">
+              <div className="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full transform hover:scale-105 transition-all duration-300">
+                <Award className="w-4 h-4 text-primary" />
+                <span className="text-sm font-medium text-primary">Licensed Professionals</span>
               </div>
-              <div className="flex items-center gap-2 bg-violet-200 dark:bg-violet-800/50 px-4 py-2 rounded-full">
-                <Heart className="w-4 h-4 text-violet-600 dark:text-violet-400" />
-                <span className="text-sm font-medium text-violet-800 dark:text-violet-200">Compassionate Care</span>
+              <div className="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full transform hover:scale-105 transition-all duration-300">
+                <Heart className="w-4 h-4 text-primary" />
+                <span className="text-sm font-medium text-primary">Compassionate Care</span>
               </div>
-              <div className="flex items-center gap-2 bg-violet-200 dark:bg-violet-800/50 px-4 py-2 rounded-full">
-                <Shield className="w-4 h-4 text-violet-600 dark:text-violet-400" />
-                <span className="text-sm font-medium text-violet-800 dark:text-violet-200">Confidential & Safe</span>
+              <div className="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full transform hover:scale-105 transition-all duration-300">
+                <Shield className="w-4 h-4 text-primary" />
+                <span className="text-sm font-medium text-primary">Confidential & Safe</span>
               </div>
             </div>
           </div>
@@ -176,21 +182,90 @@ export default function Experts() {
         <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-background to-transparent"></div>
       </section>
 
-      {/* Team Stats */}
-      <section className="py-16 bg-muted/30">
+      {/* Professional Team Stats Widget */}
+      <section className="py-16 bg-gradient-to-r from-violet-50 to-purple-50 dark:from-violet-950/10 dark:to-purple-950/10">
         <div className="container px-4">
-          <div className="mx-auto max-w-4xl">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="mx-auto max-w-6xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-violet-900 dark:text-violet-100 mb-4">
+                Our Professional Excellence
+              </h2>
+              <p className="text-violet-700 dark:text-violet-300">
+                Numbers that reflect our commitment to quality mental healthcare
+              </p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {teamStats.map((stat, index) => (
-                <div key={index} className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                    {stat.number}
-                  </div>
-                  <div className="text-sm text-muted-foreground font-medium">
-                    {stat.label}
-                  </div>
-                </div>
+                <Card key={index} className="text-center border-0 shadow-lg bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm hover:shadow-xl transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="text-4xl font-bold text-violet-600 dark:text-violet-400 mb-2">
+                      {stat.number}
+                    </div>
+                    <div className="text-sm text-violet-700 dark:text-violet-300 font-medium">
+                      {stat.label}
+                    </div>
+                  </CardContent>
+                </Card>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Professional Credentials Widget */}
+      <section className="py-16 bg-white dark:bg-gray-900">
+        <div className="container px-4">
+          <div className="mx-auto max-w-6xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-violet-900 dark:text-violet-100 mb-4">
+                Professional Credentials & Certifications
+              </h2>
+              <p className="text-violet-700 dark:text-violet-300 max-w-3xl mx-auto">
+                Our team maintains the highest professional standards with ongoing education and certification requirements.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <Card className="text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardHeader>
+                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-violet-100 dark:bg-violet-900/50">
+                    <GraduationCap className="h-8 w-8 text-violet-600 dark:text-violet-400" />
+                  </div>
+                  <CardTitle className="text-xl text-violet-900 dark:text-violet-100">Advanced Degrees</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-violet-700 dark:text-violet-300">
+                    All our professionals hold advanced degrees from accredited institutions with specialized training in mental health.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardHeader>
+                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-purple-100 dark:bg-purple-900/50">
+                    <Award className="h-8 w-8 text-purple-600 dark:text-purple-400" />
+                  </div>
+                  <CardTitle className="text-xl text-purple-900 dark:text-purple-100">Board Certified</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-purple-700 dark:text-purple-300">
+                    Licensed and board-certified professionals who maintain the highest standards of clinical practice and ethics.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardHeader>
+                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-indigo-100 dark:bg-indigo-900/50">
+                    <Clock className="h-8 w-8 text-indigo-600 dark:text-indigo-400" />
+                  </div>
+                  <CardTitle className="text-xl text-indigo-900 dark:text-indigo-100">Continuing Education</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-indigo-700 dark:text-indigo-300">
+                    Regular training and continuing education to stay current with the latest research and treatment methods.
+                  </p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
@@ -236,6 +311,7 @@ export default function Experts() {
         </div>
       </section>
 
+
       {/* Expert Profiles */}
       <section className="py-20 bg-muted/30">
         <div className="container px-4">
@@ -251,7 +327,7 @@ export default function Experts() {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {experts.map((expert, index) => (
-                <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+                <Card key={index} className={`border-0 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-fade-in-up animation-delay-${index * 100}`}>
                   <CardHeader className="pb-4">
                     <div className="flex items-start gap-4">
                       <div className="h-20 w-20 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">

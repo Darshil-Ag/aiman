@@ -22,17 +22,21 @@ export default function Services() {
       icon: Heart,
       title: "Adult Therapy",
       description: "Professional counseling and therapy services for adults facing mental health challenges",
-      color: "from-violet-500 to-violet-600",
-      bgColor: "bg-violet-50 dark:bg-violet-950/20",
-      borderColor: "border-violet-200 dark:border-violet-800",
-      textColor: "text-violet-600 dark:text-violet-400",
+      color: "from-primary to-primary",
+      bgColor: "bg-primary/10 dark:bg-primary/20",
+      borderColor: "border-primary/20 dark:border-primary/30",
+      textColor: "text-primary",
       features: [
-        "Individual therapy sessions",
-        "Cognitive Behavioral Therapy (CBT)",
-        "Dialectical Behavior Therapy (DBT)",
-        "Mindfulness-based approaches",
-        "Trauma-informed care",
-        "Group therapy options"
+        "Individual therapy sessions with licensed therapists",
+        "Cognitive Behavioral Therapy (CBT) for anxiety and depression",
+        "Dialectical Behavior Therapy (DBT) for emotional regulation",
+        "Mindfulness-based stress reduction (MBSR)",
+        "Trauma-informed care for PTSD and complex trauma",
+        "Group therapy sessions for peer support",
+        "Couples and family therapy sessions",
+        "Art therapy and creative expression",
+        "EMDR therapy for trauma processing",
+        "Solution-focused brief therapy"
       ],
       includes: [
         "Personalized treatment plans",
@@ -63,10 +67,10 @@ export default function Services() {
       icon: Brain,
       title: "Adult Psychiatry",
       description: "Comprehensive psychiatric evaluation and medication management for mental health conditions",
-      color: "from-purple-500 to-purple-600",
-      bgColor: "bg-purple-50 dark:bg-purple-950/20",
-      borderColor: "border-purple-200 dark:border-purple-800",
-      textColor: "text-purple-600 dark:text-purple-400",
+      color: "from-accent to-accent",
+      bgColor: "bg-accent/10 dark:bg-accent/20",
+      borderColor: "border-accent/20 dark:border-accent/30",
+      textColor: "text-accent",
       features: [
         "Psychiatric evaluations",
         "Medication management",
@@ -153,25 +157,31 @@ export default function Services() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="py-24 bg-gradient-to-br from-violet-50 via-purple-50 to-indigo-50 dark:from-violet-950/20 dark:via-purple-950/20 dark:to-indigo-950/20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjOGI1Y2Y5IiBmaWxsLW9wYWNpdHk9IjAuMSI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMiIvPjwvZz48L3N2Zz4=')] opacity-40"></div>
+      <section className="py-24 bg-gradient-to-br from-primary/5 via-accent/5 to-secondary relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjOGI1Y2Y5IiBmaWxsLW9wYWNpdHk9IjAuMSI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMiIvPjwvZz48L3N2Zz4=')] opacity-40 animate-pulse"></div>
         <div className="container px-4 relative z-10">
           <div className="mx-auto max-w-4xl text-center">
-            <Badge variant="secondary" className="mb-6 text-sm font-medium bg-violet-100 text-violet-800 dark:bg-violet-900 dark:text-violet-200 border-violet-200 dark:border-violet-800">
-              Our Services
-            </Badge>
-            <h1 className="mb-8 text-5xl font-bold tracking-tight sm:text-7xl text-violet-900 dark:text-violet-100">
-              Comprehensive Mental Health Services
-            </h1>
-            <p className="text-xl sm:text-2xl leading-relaxed text-violet-700 dark:text-violet-300 max-w-3xl mx-auto">
-              We provide a full spectrum of mental health services designed to support you at every stage of your journey to wellness.
-            </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-violet-600 hover:bg-violet-700 text-white">
+            <div className="animate-fade-in-up">
+              <Badge variant="secondary" className="mb-6 text-sm font-medium animate-bounce">
+                Our Services
+              </Badge>
+            </div>
+            <div className="animate-fade-in-up animation-delay-200">
+              <h1 className="mb-8 text-5xl font-bold tracking-tight sm:text-7xl">
+                Comprehensive Mental Health Services
+              </h1>
+            </div>
+            <div className="animate-fade-in-up animation-delay-400">
+              <p className="text-xl sm:text-2xl leading-relaxed text-muted-foreground max-w-3xl mx-auto">
+                We provide a full spectrum of mental health services designed to support you at every stage of your journey to wellness.
+              </p>
+            </div>
+            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-600">
+              <Button size="lg" className="transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                 <MessageCircle className="mr-2 w-5 h-5" />
                 Get Started Today
               </Button>
-              <Button size="lg" variant="outline" className="border-violet-600 text-violet-600 hover:bg-violet-600 hover:text-white">
+              <Button size="lg" variant="outline" className="transform hover:scale-105 transition-all duration-300">
                 <Phone className="mr-2 w-5 h-5" />
                 Call Us Now
               </Button>
@@ -181,25 +191,87 @@ export default function Services() {
         <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-background to-transparent"></div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-16 bg-muted/30">
+      {/* Professional Stats Widget */}
+      <section className="py-16 bg-gradient-to-r from-violet-50 to-purple-50 dark:from-violet-950/10 dark:to-purple-950/10">
         <div className="container px-4">
-          <div className="mx-auto max-w-4xl">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="mx-auto max-w-6xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">
+                Trusted by Thousands
+              </h2>
+              <p className="text-muted-foreground">
+                Our proven track record speaks for itself
+              </p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {stats.map((stat, index) => (
-                <div key={index} className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                    {stat.number}
-                  </div>
-                  <div className="text-sm text-muted-foreground font-medium">
-                    {stat.label}
-                  </div>
-                </div>
+                <Card key={index} className="text-center border-0 shadow-lg bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm hover:shadow-xl transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="text-4xl font-bold text-primary mb-2">
+                      {stat.number}
+                    </div>
+                    <div className="text-sm text-muted-foreground font-medium">
+                      {stat.label}
+                    </div>
+                  </CardContent>
+                </Card>
               ))}
             </div>
           </div>
         </div>
       </section>
+
+      {/* Professional Features Widget */}
+      <section className="py-16 bg-white dark:bg-gray-900">
+        <div className="container px-4">
+          <div className="mx-auto max-w-6xl">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <Card className="text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardHeader>
+                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+                    <Shield className="h-8 w-8 text-primary" />
+                  </div>
+                  <CardTitle className="text-xl">Licensed & Certified</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">
+                    All our mental health professionals are fully licensed and certified with extensive training and experience.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardHeader>
+                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-purple-100 dark:bg-purple-900/50">
+                    <Clock className="h-8 w-8 text-purple-600 dark:text-purple-400" />
+                  </div>
+                  <CardTitle className="text-xl text-purple-900 dark:text-purple-100">24/7 Support</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-purple-700 dark:text-purple-300">
+                    Round-the-clock mental health support and crisis intervention services when you need them most.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardHeader>
+                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-indigo-100 dark:bg-indigo-900/50">
+                    <Star className="h-8 w-8 text-indigo-600 dark:text-indigo-400" />
+                  </div>
+                  <CardTitle className="text-xl text-indigo-900 dark:text-indigo-100">Evidence-Based Care</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-indigo-700 dark:text-indigo-300">
+                    Our treatments are based on the latest scientific research and proven therapeutic methodologies.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* Services Section */}
       <section className="py-20">
@@ -209,27 +281,33 @@ export default function Services() {
               {services.map((service, index) => {
                 const Icon = service.icon;
                 return (
-                  <div key={index} className="space-y-8">
+                  <div key={index} className={`space-y-8 animate-fade-in-up animation-delay-${index * 200}`}>
                     {/* Service Header */}
                     <div className="text-center">
-                      <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full ${service.bgColor} ${service.borderColor} border-2 mb-6`}>
+                      <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full ${service.bgColor} ${service.borderColor} border-2 mb-6 transform hover:scale-110 transition-all duration-300`}>
                         <Icon className={`w-8 h-8 ${service.textColor}`} />
                       </div>
-                      <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">
+                      <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4 text-lavender-900 dark:text-lavender-100">
                         {service.title}
                       </h2>
-                      <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                      <p className="text-xl text-lavender-700 dark:text-lavender-300 max-w-3xl mx-auto">
                         {service.description}
                       </p>
+                      <div className="mt-4 flex justify-center">
+                        <div className="flex items-center gap-2 text-lavender-600 dark:text-lavender-400 bg-lavender-100 dark:bg-lavender-900/50 px-4 py-2 rounded-full">
+                          <span className="text-2xl">🌸</span>
+                          <span className="font-medium">Peaceful & Professional Care</span>
+                        </div>
+                      </div>
                     </div>
 
                     {/* Service Details Grid */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                       {/* What It Includes */}
-                      <Card className="border-0 shadow-lg">
+                      <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                         <CardHeader>
-                          <CardTitle className="flex items-center gap-2 text-xl">
-                            <CheckCircle className="w-5 h-5 text-primary" />
+                          <CardTitle className="flex items-center gap-2 text-xl text-lavender-900 dark:text-lavender-100">
+                            <CheckCircle className="w-5 h-5 text-lavender-600 dark:text-lavender-400" />
                             What It Includes
                           </CardTitle>
                         </CardHeader>
