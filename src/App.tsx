@@ -23,6 +23,10 @@ import Contact from "./pages/Contact";
 import Doctors from "./pages/Doctors";
 import ServiceDetail from "./pages/ServiceDetail";
 import ConditionDetail from "./pages/ConditionDetail";
+import Providers from "./pages/Providers";
+import Resources from "./pages/Resources";
+import ArticleDetail from "./pages/ArticleDetail";
+import Help from "./pages/Help";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +42,10 @@ const App = () => (
           <Route path="/services" element={<Layout><Services /></Layout>} />
           <Route path="/services/:slug" element={<ServiceDetail />} />
           <Route path="/services/:serviceSlug/conditions/:conditionSlug" element={<ConditionDetail />} />
+          <Route path="/providers" element={<Layout><Providers /></Layout>} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/resources/:slug" element={<ArticleDetail />} />
+          <Route path="/help" element={<Layout><Help /></Layout>} />
           <Route path="/conditions" element={<Layout><Conditions /></Layout>} />
           <Route path="/experts" element={<Layout><Experts /></Layout>} />
           <Route path="/doctor-signup" element={<DoctorSignup />} />

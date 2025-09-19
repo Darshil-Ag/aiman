@@ -60,9 +60,7 @@ export default function Home() {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="text-lg px-8">
-                <Link to="/services">
-                  Learn More
-                </Link>
+                <Link to="/providers">Find Expert</Link>
               </Button>
             </div>
           </div>

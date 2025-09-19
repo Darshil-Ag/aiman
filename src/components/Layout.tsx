@@ -12,8 +12,10 @@ const navigation = [
   { name: "Home", href: "/", icon: Home },
   { name: "About", href: "/about", icon: Info },
   { name: "Services", href: "/services", icon: Brain },
-  { name: "Experts", href: "/experts", icon: UserCheck },
+  { name: "Providers", href: "/providers", icon: UserCheck },
   { name: "Book Appointment", href: "/book", icon: Calendar },
+  { name: "Resources", href: "/resources", icon: Stethoscope },
+  { name: "Help", href: "/help", icon: Users },
 ];
 
 export function Layout({ children }: LayoutProps) {
