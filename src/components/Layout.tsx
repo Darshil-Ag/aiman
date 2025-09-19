@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Heart, Calendar, Stethoscope, Users, Home, Info, Phone, Brain, UserCheck, BookOpen } from "lucide-react";
+import { Menu, Heart, Calendar, Stethoscope, Users, Home, Info, Phone, Brain, UserCheck } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 interface LayoutProps {
@@ -13,7 +13,6 @@ const navigation = [
   { name: "About", href: "/about", icon: Info },
   { name: "Services", href: "/services", icon: Brain },
   { name: "Experts", href: "/experts", icon: UserCheck },
-  { name: "How to Book", href: "/patient-flow", icon: BookOpen },
   { name: "Book Appointment", href: "/book", icon: Calendar },
 ];
 

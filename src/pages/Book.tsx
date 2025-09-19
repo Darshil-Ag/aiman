@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { useState, useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
+import HowToBookContent from "@/components/HowToBookContent";
 
 type Doctor = {
   id: string;
@@ -473,6 +474,10 @@ export default function Book() {
             </Card>
           </TabsContent>
         </Tabs>
+      </div>
+      {/* How to Book section below Book Appointment contents */}
+      <div className="mt-12">
+        <HowToBookContent />
       </div>
     </Layout>
   );

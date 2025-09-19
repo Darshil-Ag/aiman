@@ -12,7 +12,6 @@ import Experts from "./pages/Experts";
 import NotFound from "./pages/NotFound";
 import DoctorSignup from "./pages/DoctorSignup";
 import PatientSignup from "./pages/PatientSignup";
-import PatientFlow from "./pages/PatientFlow";
 import Login from "./pages/Login";
 import Availability from "./pages/Availability";
 import Book from "./pages/Book";
@@ -22,6 +21,8 @@ import Confirm from "./pages/Confirm";
 import Facilities from "./pages/Facilities";
 import Contact from "./pages/Contact";
 import Doctors from "./pages/Doctors";
+import ServiceDetail from "./pages/ServiceDetail";
+import ConditionDetail from "./pages/ConditionDetail";
 
 const queryClient = new QueryClient();
 
@@ -35,11 +36,12 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<Layout><About /></Layout>} />
           <Route path="/services" element={<Layout><Services /></Layout>} />
+          <Route path="/services/:slug" element={<ServiceDetail />} />
+          <Route path="/services/:serviceSlug/conditions/:conditionSlug" element={<ConditionDetail />} />
           <Route path="/conditions" element={<Layout><Conditions /></Layout>} />
           <Route path="/experts" element={<Layout><Experts /></Layout>} />
           <Route path="/doctor-signup" element={<DoctorSignup />} />
           <Route path="/patient-signup" element={<PatientSignup />} />
-          <Route path="/patient-flow" element={<PatientFlow />} />
           <Route path="/login" element={<Login />} />
           <Route path="/availability" element={<Availability />} />
           <Route path="/book" element={<Book />} />
